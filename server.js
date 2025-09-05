@@ -412,6 +412,7 @@ app.get('/api/categories', authenticateToken, async (req, res) => {
         } catch (error) {
             res.status(500).json({ error: 'Failed to fetch categories' });
         }
+    }
 });
 
 // Add new question
